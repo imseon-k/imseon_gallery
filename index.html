@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Imseon Kwon — Web & Campaign Design</title>
+<style>
+  :root{
+    --bg:#faf9f7; --ink:#1a1a1a; --muted:#8a857e; --line:#e8e5e0;
+    --card:#ffffff; --accent:#1a1a1a;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{font-family:-apple-system,'Segoe UI','Helvetica Neue',sans-serif;background:var(--bg);color:var(--ink);line-height:1.6;-webkit-font-smoothing:antialiased}
+  .wrap{max-width:1080px;margin:0 auto;padding:0 24px}
+
+  header{padding:72px 0 40px;border-bottom:1px solid var(--line)}
+  .eyebrow{font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);margin-bottom:16px}
+  h1{font-size:38px;font-weight:700;letter-spacing:-.02em;line-height:1.1}
+  .lede{font-size:17px;color:#4a463f;margin-top:16px;max-width:620px}
+  .meta{margin-top:22px;font-size:14px;color:var(--muted)}
+  .meta a{color:var(--ink);text-decoration:none;border-bottom:1px solid #ccc}
+  .meta a:hover{border-color:var(--ink)}
+
+  section{padding:56px 0}
+  section + section{border-top:1px solid var(--line)}
+  .sec-head{margin-bottom:28px}
+  .sec-tag{font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:var(--muted);margin-bottom:8px}
+  .sec-title{font-size:24px;font-weight:700;letter-spacing:-.01em}
+  .sec-desc{font-size:15px;color:#4a463f;margin-top:8px;max-width:640px}
+
+  .grid{display:grid;grid-template-columns:repeat(2,1fr);gap:22px}
+  .grid.tall{grid-template-columns:repeat(3,1fr)}
+  figure{background:var(--card);border:1px solid var(--line);border-radius:12px;overflow:hidden;cursor:pointer;transition:transform .18s ease,box-shadow .18s ease}
+  figure:hover{transform:translateY(-3px);box-shadow:0 10px 30px rgba(0,0,0,.08)}
+  .imgbox{position:relative;width:100%;background:#f0eee9;overflow:hidden}
+  .imgbox.wide{aspect-ratio:16/10}
+  .imgbox.long{aspect-ratio:9/16}
+  .imgbox img{width:100%;height:100%;object-fit:cover;object-position:top center;display:block}
+  .ph{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:8px;color:#a8a29a;text-align:center;padding:16px}
+  .ph .fn{font-size:12px;font-family:ui-monospace,Menlo,monospace;background:#fff;border:1px solid var(--line);border-radius:6px;padding:4px 8px;color:#6a655e}
+  figcaption{padding:14px 16px 16px}
+  figcaption .role{font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);margin-bottom:5px}
+  figcaption p{font-size:14px;color:#33302b}
+
+  footer{padding:48px 0 72px;border-top:1px solid var(--line);color:var(--muted);font-size:14px}
+  footer a{color:var(--ink);text-decoration:none;border-bottom:1px solid #ccc}
+
+  /* lightbox */
+  .lb{position:fixed;inset:0;background:rgba(20,18,15,.92);display:none;align-items:flex-start;justify-content:center;padding:40px 20px;overflow-y:auto;z-index:50}
+  .lb.open{display:flex}
+  .lb img{max-width:900px;width:100%;height:auto;border-radius:8px;box-shadow:0 20px 60px rgba(0,0,0,.5)}
+  .lb-close{position:fixed;top:20px;right:26px;color:#fff;font-size:30px;cursor:pointer;line-height:1;opacity:.8}
+  .lb-close:hover{opacity:1}
+
+  @media(max-width:720px){
+    h1{font-size:30px}
+    .grid,.grid.tall{grid-template-columns:1fr}
+    header{padding:48px 0 32px}
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header>
+    <div class="eyebrow">Web &amp; Campaign Design · Selected Work</div>
+    <h1>Imseon Kwon</h1>
+    <p class="lede">Ecommerce storefronts, campaign landing pages, and conversion-focused pages. Toronto-based, 6+ years of client work.</p>
+    <div class="meta">kwon.ray0902@gmail.com &nbsp;·&nbsp; <a href="https://imseon.com" target="_blank" rel="noopener">imseon.com</a> &nbsp;·&nbsp; +1 (647) 355 9592</div>
+  </header>
+
+  <!-- PROJECT 1 -->
+  <section>
+    <div class="sec-head">
+      <div class="sec-tag">Current client · Shopify + Wix</div>
+      <div class="sec-title">Toronto Flower Gallery</div>
+      <p class="sec-desc">A Toronto florist (operating since the 1980s). I manage the Shopify storefront — product pages and imagery — and design the Wix site and campaign landing pages.</p>
+    </div>
+    <div class="grid">
+
+      <figure onclick="openLB('tfg-shopify-product.png')">
+        <div class="imgbox wide">
+          <img src="tfg-shopify-product.png" alt="Shopify product page" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+          <div class="ph" style="display:none"><span>Shopify product page</span><span class="fn">tfg-shopify-product.png</span></div>
+        </div>
+        <figcaption>
+          <div class="role">Shopify · Product page</div>
+          <p>Custom bouquet builder — type, size, fulfillment method, and add-ons (chocolate, gift bag, card, ribbon) on a single product page.</p>
+        </figcaption>
+      </figure>
+
+      <figure onclick="openLB('tfg-shopify-collection.jpg')">
+        <div class="imgbox wide">
+          <img src="tfg-shopify-collection.jpg" alt="Shopify collection page" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+          <div class="ph" style="display:none"><span>Shopify collection page</span><span class="fn">tfg-shopify-collection.jpg</span></div>
+        </div>
+        <figcaption>
+          <div class="role">Shopify · Collection</div>
+          <p>Collection merchandising and product imagery across the catalogue, with consistent framing and pricing hierarchy.</p>
+        </figcaption>
+      </figure>
+
+      <figure style="grid-column:1 / -1" onclick="openLB('tfg-wix-event.jpg')">
+        <div class="imgbox" style="aspect-ratio:16/9">
+          <img src="tfg-wix-event.jpg" alt="Wix event landing page" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+          <div class="ph" style="display:none"><span>Wix event landing page</span><span class="fn">tfg-wix-event.jpg</span></div>
+        </div>
+        <figcaption>
+          <div class="role">Wix · Event campaign landing page (published)</div>
+          <p>Seasonal brand-collaboration landing page (NEO Coffee Bar) — designed and published on Wix, carrying a single campaign narrative from hero to call-to-action.</p>
+        </figcaption>
+      </figure>
+
+    </div>
+  </section>
+
+  <!-- PROJECT 2 -->
+  <section>
+    <div class="sec-head">
+      <div class="sec-tag">Promotional campaign landing pages · designed to brand guidelines (Figma)</div>
+      <div class="sec-title">CLASS101</div>
+      <p class="sec-desc">Time-limited promotional landing pages for course launches on Korea's largest online course platform. I designed the campaign landing pages to CLASS101's brand guidelines in Figma; they ran as paid-campaign pages and have since been retired. Korean-language content — the layout and conversion structure are what's shown here.</p>
+    </div>
+    <div class="grid tall">
+
+      <figure onclick="openLB('class101-investing.png')">
+        <div class="imgbox long">
+          <img src="class101-investing.png" alt="CLASS101 campaign landing page — investing" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+          <div class="ph" style="display:none"><span>CLASS101 — investing</span><span class="fn">class101-investing.png</span></div>
+        </div>
+        <figcaption>
+          <div class="role">Campaign page 01</div>
+          <p>Investing course launch — value proposition, social proof, and pricing structured into one long-scroll page.</p>
+        </figcaption>
+      </figure>
+
+      <figure onclick="openLB('class101-side-income.png')">
+        <div class="imgbox long">
+          <img src="class101-side-income.png" alt="CLASS101 campaign landing page — side income" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+          <div class="ph" style="display:none"><span>CLASS101 — side income</span><span class="fn">class101-side-income.png</span></div>
+        </div>
+        <figcaption>
+          <div class="role">Campaign page 02</div>
+          <p>Side-income course launch — same conversion framework, restyled to a distinct brand palette and audience.</p>
+        </figcaption>
+      </figure>
+
+      <figure onclick="openLB('class101-real-estate.png')">
+        <div class="imgbox long">
+          <img src="class101-real-estate.png" alt="CLASS101 campaign landing page — real estate" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+          <div class="ph" style="display:none"><span>CLASS101 — real estate</span><span class="fn">class101-real-estate.png</span></div>
+        </div>
+        <figcaption>
+          <div class="role">Campaign page 03</div>
+          <p>Real-estate course launch — multi-expert format with a denser information hierarchy, same underlying page system.</p>
+        </figcaption>
+      </figure>
+
+    </div>
+  </section>
+
+  <footer>
+    Thanks for looking. Full portfolio at <a href="https://imseon.com" target="_blank" rel="noopener">imseon.com</a>. &nbsp;— Imseon Kwon
+  </footer>
+
+</div>
+
+<div class="lb" id="lb" onclick="closeLB()">
+  <span class="lb-close" onclick="closeLB()">&times;</span>
+  <img id="lb-img" src="" alt="">
+</div>
+
+<script>
+  function openLB(src){
+    var img=document.getElementById('lb-img');
+    img.src=src; img.onerror=function(){closeLB()};
+    document.getElementById('lb').classList.add('open');
+    document.body.style.overflow='hidden';
+  }
+  function closeLB(){
+    document.getElementById('lb').classList.remove('open');
+    document.body.style.overflow='';
+  }
+  document.addEventListener('keydown',function(e){if(e.key==='Escape')closeLB()});
+</script>
+</body>
+</html>
