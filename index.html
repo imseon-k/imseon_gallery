@@ -78,6 +78,18 @@ button{font:inherit;border:none;background:none;cursor:pointer;color:inherit;}
 .thumb-cap{display:flex;align-items:center;justify-content:space-between;gap:10px;padding:14px 18px 16px;}
 .thumb-role{font-family:var(--font-body);font-size:13px;color:var(--ink-500);}
 .thumb-title{font-family:var(--font-head);font-weight:700;font-size:14px;color:var(--ink-900);white-space:nowrap;}
+.proj-link{color:inherit;border-bottom:2px solid transparent;transition:border-color .2s var(--ease);}
+.proj-link:hover{border-color:var(--lime);}
+.ext{font-size:.6em;margin-left:6px;vertical-align:super;color:var(--ink-500);}
+.live-links{display:flex;flex-wrap:wrap;gap:20px 40px;margin-top:24px;padding:22px 24px;border-radius:var(--r-sm);background:var(--panel-bg);}
+.live-group{display:flex;flex-direction:column;gap:10px;}
+.live-label{font-family:var(--font-head);font-weight:500;font-size:12px;letter-spacing:.4px;text-transform:uppercase;color:var(--ink-500);}
+.live-row{display:flex;flex-wrap:wrap;gap:8px;}
+.live-chip{display:inline-flex;align-items:center;padding:9px 16px;border-radius:999px;background:var(--card-bg);font-family:var(--font-body);font-weight:500;font-size:14px;color:var(--ink-700);transition:background .2s var(--ease),color .2s var(--ease);}
+.live-chip:hover{background:var(--dark);color:#fff;}
+.live-chip.feat{background:var(--dark);color:var(--lime);}
+.live-chip.feat:hover{background:#000;}
+.live-chip .ext{font-size:11px;vertical-align:baseline;color:inherit;opacity:.7;}
 .tag{display:inline-flex;align-items:center;padding:5px 12px;border-radius:var(--r-xs);background:rgba(51,51,51,.08);font-family:var(--font-body);font-weight:500;font-size:13px;letter-spacing:-.28px;color:var(--ink-700);white-space:nowrap;}
 
 /* ─── FOOTER ─── */
@@ -155,7 +167,7 @@ button{font:inherit;border:none;background:none;cursor:pointer;color:inherit;}
     <section class="card reveal">
       <div class="card-head">
         <div class="sec-label"><span class="sec-count">1</span><span class="sec-title">Current client · Shopify + Wix</span></div>
-        <h2 class="proj-name">Toronto Flower Gallery</h2>
+        <h2 class="proj-name"><a class="proj-link" href="https://torontoflowergallery.ca" target="_blank" rel="noopener">Toronto Flower Gallery<span class="ext" aria-hidden="true">↗</span></a></h2>
         <p class="proj-desc">A Toronto-based flower shop offering a flower-arrangement consulting service. I manage the Shopify product pages and imagery, and design campaign landing pages on Wix.</p>
       </div>
       <div class="thumbs cols-2">
@@ -169,6 +181,22 @@ button{font:inherit;border:none;background:none;cursor:pointer;color:inherit;}
           <span class="badge"><b>6</b> screens · click to view</span>
           <div class="thumb-cap"><span class="thumb-role">Event &amp; Wedding Portfolio Landing Page on Wix</span><span class="tag">Wix · Published</span></div>
         </figure>
+      </div>
+      <div class="live-links">
+        <div class="live-group">
+          <span class="live-label">Live portfolio · Wedding Flower Gallery</span>
+          <div class="live-row">
+            <a class="live-chip" href="https://www.weddingflowergallery.ca/s-projects-basic" target="_blank" rel="noopener">Wedding portfolio<span class="ext" aria-hidden="true">↗</span></a>
+            <a class="live-chip" href="https://www.weddingflowergallery.ca/copy-of-wedding" target="_blank" rel="noopener">Event portfolio<span class="ext" aria-hidden="true">↗</span></a>
+          </div>
+        </div>
+        <div class="live-group">
+          <span class="live-label">Featured landing pages</span>
+          <div class="live-row">
+            <a class="live-chip feat" href="https://www.weddingflowergallery.ca/single-project" target="_blank" rel="noopener">Timeless Vows in Vibrant Bloom<span class="ext" aria-hidden="true">↗</span></a>
+            <a class="live-chip feat" href="https://www.weddingflowergallery.ca/neo-coffee" target="_blank" rel="noopener">NEO Coffee Bar<span class="ext" aria-hidden="true">↗</span></a>
+          </div>
+        </div>
       </div>
     </section>
 
