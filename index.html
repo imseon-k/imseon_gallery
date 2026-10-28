@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Imseon Kwon — Web & Campaign Design</title>
+<title>Imseon Kwon — Web, Campaign & Social Design</title>
 <link rel="icon" type="image/svg+xml" href="hold_icon-yellow.svg">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -71,6 +71,10 @@ button{font:inherit;border:none;background:none;cursor:pointer;color:inherit;}
 .thumb:hover{transform:translateY(-4px);box-shadow:0 16px 40px rgba(33,33,33,.10);}
 .thumb .imgwrap{width:100%;aspect-ratio:16/11;overflow:hidden;}
 .thumb.tall .imgwrap{aspect-ratio:3/4;}
+.thumb.sq .imgwrap{aspect-ratio:1/1;}
+.thumb.wide .imgwrap{display:flex;align-items:center;background:#EFE7DA;}
+.thumb.wide img{height:auto;object-fit:contain;}
+.proj-notes{display:flex;flex-wrap:wrap;gap:8px;margin-top:2px;}
 .thumb img{width:100%;height:100%;object-fit:cover;object-position:top center;display:block;transition:transform .5s var(--ease);}
 .thumb:hover img{transform:scale(1.03);}
 .badge{position:absolute;top:14px;left:14px;display:flex;align-items:center;gap:6px;background:rgba(33,33,33,.86);color:#fff;font-family:var(--font-head);font-weight:600;font-size:12px;letter-spacing:.02em;padding:6px 11px;border-radius:999px;backdrop-filter:blur(4px);}
@@ -151,9 +155,9 @@ button{font:inherit;border:none;background:none;cursor:pointer;color:inherit;}
     <!-- HERO -->
     <header class="hero reveal">
       <div class="hero-copy">
-        <div class="hero-eyebrow">Web · Campaign · Dashboard — Selected Work</div>
+        <div class="hero-eyebrow">Web · Campaign · Social · Dashboard — Selected Work</div>
         <h1 class="hero-name">Imseon Kwon</h1>
-        <p class="hero-lede">Ecommerce storefronts, campaign landing pages, and B2B dashboards. Toronto-based, 6+ years of client work.</p>
+        <p class="hero-lede">Ecommerce storefronts, campaign landing pages, social ad creative for Meta, and B2B dashboards. Toronto-based, 6+ years of client work.</p>
       </div>
       <div class="hero-meta">
         <span class="meta-chip">kwon.ray0902@gmail.com</span>
@@ -207,7 +211,65 @@ button{font:inherit;border:none;background:none;cursor:pointer;color:inherit;}
     <!-- PROJECT 2 -->
     <section class="card reveal">
       <div class="card-head">
-        <div class="sec-label"><span class="sec-count">2</span><span class="sec-title">Promotional landing pages · to brand guidelines (Figma)</span></div>
+        <div class="sec-label"><span class="sec-count">2</span><span class="sec-title">Social &amp; paid ads · Seasonal Meta campaigns</span></div>
+        <h2 class="proj-name">Baeknyeon Hwapyeon (백년화편)</h2>
+        <p class="proj-desc">Meta ad banners for a Korean rice-cake gift brand. I set an annual promotion calendar and gave each season its own graphic mood, matched to the audience: women in their 30s–40s for spring and summer, 40s–50s shoppers preparing family and business gifts for May and autumn. Every concept was resized for feed, square and display placements.</p>
+        <div class="proj-notes"><span class="tag">Family month · Reliable / Wellness / Love</span><span class="tag">Summer · Light / Healthy / Fresh</span><span class="tag">New product · Friendly / Unique / Healthy</span></div>
+      </div>
+      <div class="thumbs cols-2">
+        <figure class="thumb sq" onclick="openLB(['bn-may-parents.jpg','bn-may-teachers.jpg','bn-may-workers.jpg','bn-may-children.jpg','bn-may-parents-1200.jpg','bn-may-workers-672.jpg'])">
+          <div class="imgwrap"><img loading="lazy" src="bn-may-parents.jpg" alt="May family-month ad for Baeknyeon Hwapyeon"></div>
+          <span class="badge"><b>6</b> ads · click to view</span>
+          <div class="thumb-cap"><span class="thumb-role">Month of the family · gift campaign</span><span class="tag">Meta · Square</span></div>
+        </figure>
+        <figure class="thumb sq" onclick="openLB(['bn-sesame-98.jpg','bn-sesame-protein.jpg','bn-sesame-premium.jpg','bn-sesame-elders.jpg','bn-sesame-nutty.jpg'])">
+          <div class="imgwrap"><img loading="lazy" src="bn-sesame-98.jpg" alt="Black sesame rice cake launch ad"></div>
+          <span class="badge"><b>5</b> ads · click to view</span>
+          <div class="thumb-cap"><span class="thumb-role">New product launch · black sesame</span><span class="tag">Meta · Square</span></div>
+        </figure>
+        <figure class="thumb sq" onclick="openLB(['bn-summer-gift.jpg','bn-summer-kids.jpg','bn-summer-ipha.jpg','bn-summer-box-1200.jpg','bn-summer-gift-672.jpg'])">
+          <div class="imgwrap"><img loading="lazy" src="bn-summer-gift.jpg" alt="Summer mugwort rice cake gift ad"></div>
+          <span class="badge"><b>5</b> ads · click to view</span>
+          <div class="thumb-cap"><span class="thumb-role">Summer · light, healthy gifting</span><span class="tag">Meta · Square</span></div>
+        </figure>
+        <figure class="thumb sq wide" onclick="openLB(['bn-review-1200.jpg','bn-wedding-1200.jpg','bn-summer-box-1200.jpg','bn-may-parents-1200.jpg'])">
+          <div class="imgwrap"><img loading="lazy" src="bn-review-1200.jpg" alt="Landscape feed ads: review, wedding favour, summer box"></div>
+          <span class="badge"><b>4</b> ads · click to view</span>
+          <div class="thumb-cap"><span class="thumb-role">Feed &amp; display sizes · reviews, offers</span><span class="tag">1200×628 · 672×560</span></div>
+        </figure>
+      </div>
+    </section>
+
+    <!-- PROJECT 3 -->
+    <section class="card reveal">
+      <div class="card-head">
+        <div class="sec-label"><span class="sec-count">3</span><span class="sec-title">Social &amp; paid ads · Higher X, first and only designer</span></div>
+        <h2 class="proj-name">Brwnie — Meta ad creatives</h2>
+        <p class="proj-desc">Two years (2022–2024) of always-on Meta ads for Brwnie, an unmanned-store management service. Each set started from a short brief (target owner, hook, goal): hiring pain, proof of expertise, and card-news carousels that walk through an owner's everyday problems before the call to action.</p>
+      </div>
+      <div class="thumbs cols-3">
+        <figure class="thumb sq" onclick="openLB(['brw-hire-01.jpg','brw-hire-02.jpg','brw-hire-03.jpg','brw-hire-04.jpg'])">
+          <div class="imgwrap"><img loading="lazy" src="brw-hire-01.jpg" alt="Brwnie hiring-pain ad"></div>
+          <span class="badge"><b>4</b> ads · click to view</span>
+          <div class="thumb-cap"><span class="thumb-role">Hook · “Hard to find store staff?”</span><span class="tag">Single image</span></div>
+        </figure>
+        <figure class="thumb sq" onclick="openLB(['brw-proof-01.jpg','brw-proof-02.jpg','brw-proof-03.jpg','brw-proof-04.jpg'])">
+          <div class="imgwrap"><img loading="lazy" src="brw-proof-02.jpg" alt="Brwnie proof-of-expertise ad"></div>
+          <span class="badge"><b>4</b> ads · click to view</span>
+          <div class="thumb-cap"><span class="thumb-role">Proof · 10,268 store visits, owner quotes</span><span class="tag">Single image</span></div>
+        </figure>
+        <figure class="thumb sq" onclick="openLB(['brw-card-01.jpg','brw-card-02.jpg','brw-card-03.jpg','brw-card-04.jpg','brw-card-05.jpg'])">
+          <div class="imgwrap"><img loading="lazy" src="brw-card-01.jpg" alt="Brwnie card-news carousel"></div>
+          <span class="badge"><b>5</b> ads · click to view</span>
+          <div class="thumb-cap"><span class="thumb-role">Card news · problem to solution</span><span class="tag">Carousel</span></div>
+        </figure>
+      </div>
+    </section>
+
+    <!-- PROJECT 4 -->
+    <section class="card reveal">
+      <div class="card-head">
+        <div class="sec-label"><span class="sec-count">4</span><span class="sec-title">Promotional landing pages · to brand guidelines (Figma)</span></div>
         <h2 class="proj-name">CLASS101</h2>
         <p class="proj-desc">Time-limited promotional landing pages for course launches on Korea's largest online course platform. I designed the campaign pages to CLASS101's brand guidelines in Figma.</p>
       </div>
@@ -227,10 +289,10 @@ button{font:inherit;border:none;background:none;cursor:pointer;color:inherit;}
       </div>
     </section>
 
-    <!-- PROJECT 3 -->
+    <!-- PROJECT 5 -->
     <section class="card reveal">
       <div class="card-head">
-        <div class="sec-label"><span class="sec-count">3</span><span class="sec-title">B2B SaaS · Dashboard &amp; token-driven design system</span></div>
+        <div class="sec-label"><span class="sec-count">5</span><span class="sec-title">B2B SaaS · Dashboard &amp; token-driven design system</span></div>
         <h2 class="proj-name">LKT — WCS/WMS Fulfillment</h2>
         <p class="proj-desc">A fulfillment dashboard for a warehouse control &amp; management SaaS, built on a token-driven Figma Variable system. Data-dense views across the platform, using a unified component kit I built.</p>
       </div>
@@ -248,7 +310,7 @@ button{font:inherit;border:none;background:none;cursor:pointer;color:inherit;}
   <!-- FOOTER -->
   <footer class="footer reveal">
     <h2 class="footer-title">Thanks for looking.</h2>
-    <p class="footer-sub">More work and the full story live at imseon.com — happy to chat about ecommerce, campaigns, or design systems.</p>
+    <p class="footer-sub">More work and the full story live at imseon.com — happy to chat about ecommerce, campaigns, social ads, or design systems.</p>
     <div class="footer-actions">
       <a class="btn-touch lime" href="https://imseon.com" target="_blank" rel="noopener">Visit imseon.com</a>
       <a class="btn-touch" href="https://dribbble.com/imseon" target="_blank" rel="noopener">Dribbble</a>
